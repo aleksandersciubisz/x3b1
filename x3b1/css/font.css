@@ -24,14 +24,22 @@ h4 {
 
 p,
 h3,
-h4 {
+h4,
+a {
 	font-size: var(--g0);
 }
 
-p {
+p,
+a {
 	font-weight: 400;
 }
 
 a {
+	color: var(--text);
 	text-decoration: none;
+	transition: color 0.3 ease;
+}
+
+a:hover {
+	color: var(--secondary);
 }

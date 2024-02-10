@@ -25,7 +25,7 @@
 
 	color-scheme: dark;
 	color: var(--text);
-	background-color: var(--back);
+	background-color: var(--background);
 
 	/* https://modernfontstacks.com/  */
 	--monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
@@ -57,9 +57,8 @@ html {
 
 body {
 	min-height: 100vh;
-	/* display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
- */
+	justify-content: flex-start;
 }
