@@ -1,0 +1,43 @@
+section {
+	width: 100%;
+	max-width: var(--max);
+	min-height: 50vh;
+}
+
+/* visibility handler */
+.visible {
+	display: flex !important;
+}
+
+/* app */
+#app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	border: 5px dotted red;
+}
+
+/* contact */
+#contact {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: var(--g3) var(--g0) var(--g4) var(--g0);
+}
+
+#contact a {
+	margin: 0;
+}
+
+#mail {
+	margin-bottom: var(--g3);
+}
+
+/* more */
+#more {
+	display: none;
+	border: 5px dotted rgb(0, 30, 255);
+}
