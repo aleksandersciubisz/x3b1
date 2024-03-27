@@ -9,14 +9,15 @@ section {
 	display: flex !important;
 }
 
-/* app */
-#app {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	border: 5px dotted red;
+/* product */
+#product {
+	display: none;
+	border: 5px dotted rgb(0, 255, 81);
+}
+/* examples */
+#examples {
+	display: none;
+	border: 5px dotted rgb(13, 0, 255);
 }
 
 /* contact */

@@ -14,6 +14,14 @@
 			rel="stylesheet"
 			href="assets/sections.css" />
 
+		<link
+			rel="stylesheet"
+			href="assets/app.css" />
+
+		<link
+			rel="stylesheet"
+			href="assets/timer.css" />
+
 		<title>x3b1</title>
 	</head>
 	<body>
@@ -24,16 +32,77 @@
 				><h1>x3b1</h1></a
 			>
 			<nav>
-				<a href="">examples</a>
-				<a href="">product</a>
+				<a
+					class="product-btn"
+					href="#product"
+					>product</a
+				>
+				<a
+					class="examples-btn"
+					href="#examples"
+					>examples</a
+				>
 			</nav>
 		</header>
+		<div id="timer-message">
+			<h4>
+				status: <br />
+				UI/UX testing <br />
+				<br />
+				launch:
+				<div id="timer"></div>
+			</h4>
+		</div>
 		<section id="app">
-			<h2>
-				APP <br />
-				placeholder
-			</h2>
+			<h3>Do you want to know the future?</h3>
+			<input
+				id="filter"
+				type="search"
+				placeholder="🔍 Search and view pre-made forecasts"
+				autofocus />
+			<div id="topics">
+				<a href="">item_1 <span class="hashtag">q</span></a>
+				<a href="">item_2</a>
+				<a href="">item_3</a>
+				<a href="">test topic 1</a>
+				<a href="">test topic 2</a>
+				<a href="">test topic 3</a>
+				<a href="">test topic 4</a>
+				<a href="">another 1</a>
+				<a href="">another 2</a>
+				<a href="">another 3</a>
+				<a href="">another 4</a>
+				<a href="">placeholder 1</a>
+				<a href="">placeholder 2</a>
+				<a href="">placeholder 3</a>
+				<a href="">placeholder 4</a>
+				<a href="">placeholder 5</a>
+				<a href="">placeholder 6</a>
+				<a href="">placeholder 7</a>
+				<a href="">more links 1</a>
+				<a href="">more links 2</a>
+				<a href="">more links 3</a>
+				<a href="">more links 4</a>
+				<a href="">more links 5</a>
+				<a href="">more links 6</a>
+				<a href="">link_link 1</a>
+				<a href="">link_link 2</a>
+				<a href="">link_link 3</a>
+				<a href="">link_link 4</a>
+				<a href="">link_link 5</a>
+			</div>
+			<a
+				id="CTA"
+				href=""
+				>Try a custom product tailored to your needs&#x21C2;<br />
+			</a>
+			<p id="CTA-slogan">
+				An adaptable software for crafting your own custom predictions. <br />
+				$x per license.
+			</p>
 		</section>
+		<section id="product"></section>
+		<section id="examples"></section>
 		<section id="more"></section>
 		<section id="contact">
 			<h4 id="mail">

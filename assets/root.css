@@ -61,16 +61,6 @@ a {
 	letter-spacing: 0.03em;
 }
 
-/* h1 {
-	font-size: var(--g3);
-	line-height: 1em;
-	transform: rotate(90deg);
-} */
-
-#alpha {
-	transform: rotate(90deg);
-}
-
 h2 {
 	font-size: var(--g2);
 }
