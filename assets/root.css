@@ -99,6 +99,14 @@ h1 {
 a {
 	margin: 0 var(--gs);
 }
+
+.small {
+	margin-top: var(--gs);
+	font-size: var(--gs);
+	max-width: 35rem;
+	text-align: center;
+}
+
 /* layout */
 html {
 	scroll-behavior: smooth;

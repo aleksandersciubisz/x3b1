@@ -25,7 +25,8 @@
 	outline: none;
 }
 
-#topics {
+#topics,
+#titles {
 	padding-top: var(--gs);
 
 	display: flex;
@@ -43,9 +44,10 @@
 	display: none;
 }
 
-#topics a {
-	color: var(--light);
-	background-color: var(--dark);
+#topics a,
+#titles a {
+	color: var(--background);
+	background-color: var(--text);
 	transition: opacity 0.3s ease-in-out;
 	opacity: 1;
 	padding: 0 var(--gs);
@@ -54,18 +56,13 @@
 	border-radius: 2px;
 }
 
-#topics a:hover {
+#topics a:hover,
+#titles a:hover {
 	background-color: var(--primary);
+	color: var(--light);
 }
 
 #CTA {
 	margin-top: var(--g3);
 	border-bottom: var(--text) 1px dotted;
-}
-
-#CTA-slogan {
-	margin-top: var(--gs);
-	font-size: var(--gs);
-	max-width: 35rem;
-	text-align: center;
 }
