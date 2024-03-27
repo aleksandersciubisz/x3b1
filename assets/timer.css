@@ -2,5 +2,5 @@
 	position: absolute;
 	top: var(--g2);
 	left: var(--g1);
-	color: hsla(var(--oil), 0.2);
+	color: #0abab5;
 }

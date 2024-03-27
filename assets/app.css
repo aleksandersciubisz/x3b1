@@ -35,7 +35,7 @@
 	align-items: flex-start;
 	width: 55rem;
 	max-width: 80%;
-	max-height: var(--g4);
+	max-height: calc(var(--g4) + var(--gs));
 	overflow-y: scroll;
 }
 
@@ -60,6 +60,7 @@
 
 #CTA {
 	margin-top: var(--g3);
+	border-bottom: var(--text) 1px dotted;
 }
 
 #CTA-slogan {
