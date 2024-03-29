@@ -1,6 +1,6 @@
 @media (max-width: 1450px) {
 	p {
-		color: red;
+		color: var(--primary);
 	}
 
 	body {
