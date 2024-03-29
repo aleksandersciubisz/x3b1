@@ -10,7 +10,7 @@ section {
 }
 
 /* product */
-#product {
+#predictor {
 	flex-direction: row;
 	padding: var(--g4) 0;
 	display: none;
@@ -25,7 +25,7 @@ section {
 	margin-bottom: var(--g1);
 }
 
-#predictor {
+#buy {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -78,7 +78,7 @@ section {
 }
 
 /* more */
-#more {
+#blog {
 	display: none;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -87,12 +87,21 @@ section {
 	margin: var(--g3) 0;
 }
 
-#more h2 {
-	margin: var(--g2);
+#blog h3 {
+	padding: var(--g2);
+}
+
+#blog p {
+	width: 100%;
+	text-align: left;
 }
 
 #titles {
 	margin-bottom: var(--g3);
 	width: 100% !important;
 	max-height: none !important;
+}
+
+#titles p {
+	width: fit-content;
 }

@@ -1,5 +1,5 @@
-const productBtn = document.querySelectorAll('.product-btn')
-const product = document.getElementById('product')
+const predictorBtn = document.querySelectorAll('.predictor-btn')
+const predictor = document.getElementById('predictor')
 
 const examplesBtn = document.querySelectorAll('.examples-btn')
 const examples = document.getElementById('examples')
@@ -7,12 +7,12 @@ const examples = document.getElementById('examples')
 const contactBtn = document.getElementById('contact-btn')
 const contact = document.getElementById('contact')
 
-const moreBtn = document.getElementById('more-btn')
-const more = document.getElementById('more')
+const blogBtn = document.getElementById('blog-btn')
+const blog = document.getElementById('blog')
 
-productBtn.forEach((button) => {
+predictorBtn.forEach((button) => {
 	button.addEventListener('click', function () {
-		product.classList.add('visible')
+		predictor.classList.add('visible')
 	})
 })
 
@@ -26,8 +26,8 @@ contactBtn.addEventListener('click', function () {
 	contact.classList.add('visible')
 })
 
-moreBtn.addEventListener('click', function () {
-	more.classList.add('visible')
+blogBtn.addEventListener('click', function () {
+	blog.classList.add('visible')
 })
 
 // adress obfuscation
