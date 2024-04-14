@@ -18,7 +18,7 @@
 	--cc1: var(--d);
 	--cc2: var(--g);
 
-	color-scheme: light;
+	color-scheme: light dark;
 
 	font-size: 100%;
 	text-align: left;
