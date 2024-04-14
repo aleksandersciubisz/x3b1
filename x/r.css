@@ -149,3 +149,48 @@ a:hover:after {
 		clip: rect(40px, 400px, 50px, 0);
 	}
 }
+
+/* responsivenes */
+
+@media (max-width: 750px) {
+	h2 {
+		font-size: var(--g1);
+	}
+
+	nav p,
+	nav a {
+		font-size: var(--g0) !important;
+	}
+}
+
+@media (max-width: 450px) {
+	nav {
+		justify-content: flex-start !important;
+		padding-left: var(--g0);
+	}
+
+	section {
+		align-items: flex-start !;
+	}
+
+	section h2 {
+		padding-left: var(--g0);
+	}
+
+	section p {
+		width: 100%;
+		text-align: left;
+		padding-left: var(--g0);
+	}
+
+	#future {
+		justify-content: flex-end;
+		padding-bottom: var(--g2);
+	}
+
+	#past {
+		justify-content: flex-start;
+
+		padding-top: var(--g2);
+	}
+}
