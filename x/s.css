@@ -1,0 +1,78 @@
+/* layout */
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: var(--l);
+}
+
+#logo {
+	position: fixed;
+	bottom: var(--g0);
+	z-index: 5;
+}
+
+#logo img {
+	height: var(--g1);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	border-top: var(--lr) 2px solid;
+	border-bottom: var(--lb) 2px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+nav p,
+nav a {
+	font-size: var(--g1);
+}
+
+section {
+	min-height: 50vh;
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#future {
+	--cc1: var(--lr);
+	--cc2: var(--dr);
+}
+
+#past {
+	--cc1: var(--lb);
+	--cc2: var(--db);
+}
+
+/* reusable classes */
+.cc1 {
+	color: var(--cc1);
+}
+
+.cc2 {
+	color: var(--cc2);
+}
