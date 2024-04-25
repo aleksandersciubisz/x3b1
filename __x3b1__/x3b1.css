@@ -1,0 +1,121 @@
+:root {
+	--gs: clamp(0.618rem, 0.5723rem + 0.2289vi, 0.7726rem);
+	--g0: clamp(1rem, 0.9259rem + 0.3704vi, 1.25rem);
+	--g1: clamp(1.618rem, 1.4981rem + 0.5993vi, 2.0225rem);
+	--g2: clamp(2.6179rem, 2.424rem + 0.9696vi, 3.2724rem);
+	--g3: clamp(4.2358rem, 3.922rem + 1.5688vi, 5.2948rem);
+	--g4: clamp(6.8535rem, 6.3459rem + 2.5383vi, 8.5669rem);
+
+	/* color palette */
+	--l: #f0ebe0;
+	--d: #0b1114;
+	--lr: #ff003c;
+	--dr: #7a0404;
+	--lb: #001eff;
+	--db: #1e22aa;
+
+	color-scheme: light dark;
+
+	font-size: 100%;
+	text-align: left;
+	cursor: default;
+	font-synthesis: none;
+	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* layout */
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body,
+section {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--l);
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button {
+	line-height: 1.61em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052,
+		serif;
+	color: var(--d);
+}
+
+h2,
+h2 a {
+	font-size: var(--g2);
+}
+
+h3,
+h3 a {
+	font-size: var(--g1);
+}
+
+h4,
+p,
+a,
+button {
+	font-size: var(--g0);
+}
+
+p {
+	max-width: 36em;
+}
+
+/* links & buttons */
+button,
+a {
+	--tenet: var(--d);
+	cursor: pointer;
+	text-decoration-color: var(--tenet);
+	transition: all 0.3s;
+}
+
+button {
+	--tenet: var(--d);
+	background-color: transparent;
+	text-decoration: none;
+	line-height: 1em;
+	padding: var(--gs) var(--g0);
+	margin: var(--gs) var(--g0);
+	border: solid 2px var(--tenet);
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+button:hover,
+button:focus {
+	transform: skew(-13deg);
+}
+
+.tenet {
+	--tenet: var(--d);
+	color: var(--tenet);
+	transition: all 0.5s;
+}
