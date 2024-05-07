@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- x3b1 landing page -->
+    <url>
+        <loc>https://x3b1.com/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+<!-- web -->
+    <url>
+        <loc>https://x3b1.com/web/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+<!-- blue -->
+    <url>
+        <loc>https://x3b1.com/blue/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+<!-- red -->
+    <url>
+        <loc>https://x3b1.com/red/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+<!-- blog -->
+    <url>
+        <loc>https://x3b1.com/blog/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+<!-- venture -->
+    <url>
+        <loc>https://x3b1.com/venture/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>   
+</urlset>

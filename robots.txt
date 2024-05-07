@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /x3b1/
+
+Crawl-Delay: 15
+
+Sitemap: https://example.com/sitemap.xml
