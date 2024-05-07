@@ -1,0 +1,37 @@
+/* tenet */
+#red,
+#blue {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+#red {
+	top: 0;
+	border-top: var(--lr) 3px solid;
+}
+#blue {
+	bottom: 0;
+	border-bottom: var(--lb) 3px solid;
+}
+
+/* logo X3B1 */
+#logo img {
+	transition: all 0.1s;
+	height: var(--g0);
+}
+
+#logo img:hover {
+	transform: skew(-13deg);
+}
+
+/* landing */
+#landing {
+	padding-top: var(--g3);
+}
+#landing h2,
+#landing h3,
+#landing h4 {
+	margin-bottom: var(--g4);
+}
