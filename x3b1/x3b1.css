@@ -106,7 +106,7 @@ button {
 
 a:hover,
 a:focus {
-	text-decoration-style: dashed;
+	text-decoration-style: dotted;
 }
 
 button:hover,

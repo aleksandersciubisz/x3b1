@@ -31,28 +31,6 @@
 		<title>x3b1</title>
 	</head>
 	<body>
-		<!-- TIMER START -->
-		<div
-			id="timer-message"
-			style="position: absolute; top: var(--gs); left: var(--g0)">
-			<p style="color: var(--lr); font-size: var(--gs)">
-				<span style="font-style: italic"
-					>This website is a placeholder used for testing.
-				</span>
-
-				<br />
-				<br />
-				<span style="font-weight: 900">status: </span><br />
-				algorithm developement: 70% <br />
-				algorithm effectivenes: &lt;50% <br />
-				design language: 100% <br />
-				UX/UI testing: 90% <br />
-				<span style="font-weight: 900">
-					launch:&nbsp;<span id="timer"></span>
-				</span>
-			</p>
-		</div>
-		<!-- TIMER END -->
 		<div id="red"></div>
 		<div id="blue"></div>
 		<section id="landing">
@@ -70,36 +48,5 @@
 					alt="" />
 			</a>
 		</section>
-		<script>
-			// timer
-			document.addEventListener('DOMContentLoaded', function () {
-				const targetDate = new Date(new Date().getFullYear(), 4, 13)
-				const timerElement = document.getElementById('timer')
-
-				function updateTimer() {
-					const now = new Date()
-					const timeDifference = targetDate - now
-
-					if (timeDifference <= 0) {
-						timerElement.textContent = 'Czas minął!'
-						clearInterval(timerInterval)
-						return
-					}
-
-					const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
-					const hours = Math.floor(
-						(timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-					)
-					const minutes = Math.floor(
-						(timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-					)
-
-					timerElement.textContent = `${days}d ${hours}h ${minutes}m`
-				}
-
-				updateTimer()
-				const timerInterval = setInterval(updateTimer, 60000)
-			})
-		</script>
 	</body>
 </html>
