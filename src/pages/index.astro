@@ -8,6 +8,11 @@ import Manifesto from '../components/Manifesto.astro';
 import Contact from '../components/Contact.astro';
 
 import Logo from '../components/Logo.astro';
+
+import { supabase } from '../utils/supabaseClient';
+
+const { data, error } = await supabase.from('your_table_name').select('*');
+console.log(data, error);
 ---
 
 <Layout>
