@@ -1,0 +1,86 @@
+<section id="contact">
+  <h2>Cont&#x3b1;ct</h2>
+  <br />
+  <form>
+    <input type="text" name="fullName" placeholder="name:" required />
+    <input type="email" name="email" placeholder="email:" required />
+    <p class="s">If you want to join, just tell me a bit about yourself and your work.</p>
+    <textarea name="message" rows="5" placeholder="message:"></textarea>
+    <button type="submit">submit</button>
+  </form>
+
+  <p>
+    <b>Soci&#x3b1;l medi&#x3b1;?</b> I avoid them in X3B1 operations because they’re too close to the
+    <a href="https://en.wikipedia.org/wiki/Dead_Internet_theory" target="_blank" class="sec">
+      dead internet</a
+    >.
+  </p>
+</section>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: var(--mid);
+    margin-bottom: var(--g2);
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: var(--mid);
+    padding: var(--gs);
+    margin: var(--gs) 0;
+  }
+
+  button {
+    margin: var(--gs) 0;
+    font-size: var(--g0);
+  }
+
+  input,
+  textarea,
+  input::placeholder,
+  textarea::placeholder {
+    background-color: var(--light);
+    border: none;
+    color: var(--dark);
+    font-size: var(--g0);
+    letter-spacing: 0.02em;
+    font-weight: 400;
+  }
+
+  input,
+  textarea {
+    border: 1px dotted var(--dark);
+    font-weight: 500;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    letter-spacing: 0.08em;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: none;
+    outline: none;
+    border: 1px dotted var(--ter);
+  }
+
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+    color: transparent;
+  }
+
+  #contact {
+    margin-top: var(--g3);
+  }
+
+  #socialMedia {
+    margin-top: var(--g3);
+  }
+</style>

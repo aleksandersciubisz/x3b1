@@ -1,0 +1,197 @@
+:root {
+  /* ultramarine */
+  --light: hsla(255, 100%, 97%, 100%);
+  --ultra: hsla(255, 100%, 50%, 100%);
+  --dark: hsla(255, 100%, 7%, 100%);
+  --sec: hsla(264, 17%, 57%, 100%);
+  --ter: hsla(206, 87%, 57%, 100%);
+
+  --ultra10: hsla(255, 100%, 50%, 10%);
+  --ter20: hsla(206, 87%, 57%, 20%);
+  --dark30: hsla(255, 100%, 7%, 30%);
+  --dark20: hsla(255, 100%, 7%, 20%);
+
+  --max: 1240px;
+  --mid: 620px;
+  --min: 320px;
+
+  /* @link https://utopia.fyi/type/calculator?c=320,18,1.618,1240,20,1.618,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --gs: clamp(0.6953rem, 0.6684rem + 0.1344vw, 0.7726rem);
+  --g0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --g1: clamp(1.8203rem, 1.7499rem + 0.3517vw, 2.0225rem);
+  --g2: clamp(2.9452rem, 2.8313rem + 0.5691vw, 3.2724rem);
+  --g3: clamp(4.7653rem, 4.5811rem + 0.9208vw, 5.2948rem);
+  --g4: clamp(7.7102rem, 7.4122rem + 1.4899vw, 8.5669rem);
+  --g5: clamp(12.4751rem, 11.993rem + 2.4107vw, 13.8613rem);
+
+  color-scheme: light dark;
+  cursor: default;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* layout */
+html {
+  background-color: var(--light);
+  background-image:
+    radial-gradient(var(--ultra10) 1px, transparent 1px),
+    radial-gradient(var(--ter20) 1px, transparent 1px);
+  background-size: 6px 6px;
+  background-position:
+    0 0,
+    3px 3px;
+
+  scroll-behavior: smooth;
+  text-align: left;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-weight: 400;
+}
+
+body,
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+body {
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: var(--g2);
+  color: var(--dark);
+}
+
+section {
+  justify-content: center;
+  max-width: var(--max);
+  padding: var(--g2);
+  margin: var(--g2);
+  box-shadow: 4px 4px 0 0 var(--ultra10);
+  border: 1px solid var(--sec);
+  background-color: var(--light);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--g2) 0;
+  row-gap: var(--g0);
+  column-gap: var(--g1);
+  width: 100%;
+  max-width: var(--mid);
+  font-size: var(--g0);
+  font-weight: 600;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  letter-spacing: 0.02em;
+  width: 100%;
+  max-width: var(--mid);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  text-shadow: 2px 2px 4px var(--dark30);
+}
+
+h1 {
+  font-size: var(--g3);
+  line-height: 1em;
+}
+
+h2,
+h3 {
+  font-size: var(--g2);
+  line-height: 1.25em;
+}
+
+h4,
+h5 {
+  font-size: var(--g1);
+  line-height: 1.618em;
+}
+
+p,
+a,
+button {
+  font-size: var(--g0);
+}
+
+p {
+  line-height: 1.618em;
+  margin: calc((1.618em) / 2) 0;
+}
+
+a,
+button {
+  width: auto;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  font-size: inherit;
+  padding: 0 0.08em;
+  transition: all 0.1s;
+  color: var(--ultra);
+  text-shadow: 2px 2px 3px var(--dark30);
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+a:hover,
+button:hover {
+  color: var(--dark);
+  padding: 0 0 0 0.16em;
+}
+
+.sec a,
+.sec button,
+.sec {
+  color: var(--sec);
+}
+
+b {
+  font-weight: 900;
+}
+
+i {
+  letter-spacing: 0.08em;
+}
+
+u {
+  text-decoration-color: var(--ter);
+}
+
+.s {
+  font-size: var(--gs);
+  font-weight: 900;
+}
+
+.r {
+  text-align: right;
+}

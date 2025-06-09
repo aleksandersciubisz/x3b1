@@ -1,0 +1,41 @@
+---
+/* 
+<Logo />
+<Logo size="small" />
+<Logo float={true} />
+<Logo size="small" float={true} />
+*/
+
+import { Image } from 'astro:assets';
+
+import blue from '../assets/logo/blue200.png';
+import dark from '../assets/logo/dark200.png';
+import navy from '../assets/logo/navy200.png';
+import ultra from '../assets/logo/ultra200.png';
+
+const { float = false, size = 'big' } = Astro.props;
+
+const logos = [blue, dark, navy, ultra];
+const randomLogo = logos[Math.floor(Math.random() * logos.length)];
+
+const className = `${size === 'small' ? 'smallLogo' : 'bigLogo'}${float ? ' float' : ''}`;
+---
+
+<Image src={randomLogo} alt="Logo X3B1 - trade league" class={className} />
+
+<style>
+  .bigLogo {
+    max-height: calc(2 * var(--g3));
+    width: auto;
+  }
+
+  .smallLogo {
+    max-height: var(--g3);
+    width: auto;
+  }
+
+  .float {
+    float: left;
+    margin-top: var(--gs);
+  }
+</style>
