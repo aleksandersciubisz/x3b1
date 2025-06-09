@@ -9,7 +9,7 @@ import Contact from '../components/Contact.astro';
 
 import Logo from '../components/Logo.astro';
 
-import { supabase } from '../utils/supabaseClient';
+import { supabase } from '../utils/supabaseClient.mjs';
 
 const { data, error } = await supabase.from('your_table_name').select('*');
 console.log(data, error);
